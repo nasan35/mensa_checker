@@ -1,0 +1,506 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126888357-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-126888357-1');
+</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="メンサ,IQ,mensa,JAPAN MENSA" />
+	<meta name="description" content="mensa は 上位 2 %の IQ (知能指数) を持つ人達が参加する国際グループです。JAPAN MENSA は mensa の日本支部として、会員同士の知的交流の場を提供しています。" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<base href="https://mensa.jp/" />
+	<link rel="stylesheet" href="lib/js/jquery/ui/jquery-ui.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="skin/default/css/common.css?2024052901" type="text/css" media="screen" />
+	<link rel="stylesheet" href="skin/default/css/exam.css?2024052901" type="text/css" media="screen" />
+	
+	<script type="text/javascript" src="lib/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="lib/js/jquery/ui/jquery-ui.js"></script>
+	<script type="text/javascript" src="skin/default/js/exam.js?2024052901"></script>
+	<script type="text/javascript" src="skin/default/js/common.js?2024052901"></script>
+	<script type="text/javascript" src="lib/js/sysdays/basis.js"></script>
+	
+	<title>JAPAN MENSA｜入会テスト情報</title>
+</head>
+<body>
+<div id="header">
+
+	<div class="logo">
+		<a href="./"><img src="skin/default/image/common/logo.png" alt="JAPAN MENSA" /></a>
+	</div>
+	<div class="openbtn" id ="js-hamburger"><span></span><span></span><span></span></div>
+	<div class="hamburger-cover"></div>
+
+	<div class="search">
+		<form action="https://www.google.com/cse" id="cse-search-box" name="cse-search-box">
+			<ul>
+				<li><input type="text" name="q" size="31" value="" /></li>
+				<li><input type="hidden" name="cx" value="006682135711250916881:yn2iu9v_nii" /></li>
+				<li><input type="hidden" name="ie" value="UTF-8" /></li>
+				<li><input type="image" class="search_button" name="sa" src="skin/default/image/common/search_button.jpg" alt="検索" /></li>
+			</ul>
+		</form>
+		<script type="text/javascript" src="//www.google.com/cse/brand?form=cse-search-box&lang=ja"></script>
+	</div>
+
+	<ul class="gnavi">
+		<li><a href="./"><img src="skin/default/image/common/gnavi/home_out.jpg" alt="Home" /></a></li>
+		<li>
+			<img src="skin/default/image/common/gnavi/about_out.jpg" alt="ABOUT mensa" />
+			<ol>
+				<li><a href="about.html">メンサとは</a></li>
+				<li><a href="whatisiq.html">What is IQ？</a></li>
+				<li><a href="staff.html">役職者紹介</a></li>
+			</ol>
+		</li>
+		<li>
+			<img src="skin/default/image/common/gnavi/join_out.jpg" alt="JOIN US" />
+			<ol>
+				<li><a href="join.html">入会方法</a></li>
+				<li><a href="exam/">入会テスト日程一覧</a></li>
+				<li><a href="reenroll/">再入会申請</a></li>
+			</ol>
+		</li>
+		<li>
+			<img src="skin/default/image/common/gnavi/info_out.jpg" alt="INFORMATION" />
+			<ol>
+				<li><a href="event/">行事予定</a></li>
+				<li><a href="coverage.html">メディアの方へ</a></li>
+				<li><a href="privacy.html">プライバシーポリシー</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="link.html">リンク</a></li>
+			</ol>
+		</li>
+		<li><a href="sight/"><img src="skin/default/image/common/gnavi/sight_out.jpg" alt="SIGHT" /></a></li>
+	</ul>
+
+	<p class="mnavi">
+		<a href="https://member.mensa.jp/"><img src="skin/default/image/common/gnavi/member_out.jpg" alt="会員用ページ" /></a>
+	</p>
+
+</div>
+
+
+	<div id='breadcrumb'><p><a href='./' class='home'>Home</a>&nbsp;&nbsp;≫&nbsp;&nbsp;入会テスト日程一覧</p></div>
+
+<div id="container">
+
+	<div id="exam" class="content">
+		
+
+<h2>入会テスト日程一覧</h2>
+
+<p>
+	弊会への入会をご検討の方は、こちらのページから入会テストにお申し込みください。<br />
+	申込締切日は開催日の10日前です。直前のお申し込みはできませんので、お早めにお申し込みください。
+</p>
+<p>
+	※WAIS等の検査で入会したい方は、<a href="certification.html">こちらのページ</a>をご確認ください。
+</p>
+
+<dl class="precaution">
+	<dt>お申込みにあたっての注意事項</dt>
+	<dd>
+		JAPAN MENSAの入会判定が行えるのは、<u>生涯につき３回</u>までとなっております。
+		証明書入会判定または弊会の入会テストで不合格となり、再度判定依頼を出す場合には、
+		前回いずれの方法を使用したか、また今回いずれの方法を使用するかに拘わらず、<u>1年以上の間隔を空けて申し込む必要があります</u>。
+	</dd>
+	<dd>
+		申込後に自動返信メールが届きます。このメールをご確認いただけない場合は受験できない場合があります。
+		もしメールが届かない場合は、<u>mensa.jpからのメールを受信できるよう設定してください</u>。
+	</dd>
+	<dd>
+		一度お申込みいただいた後は、会場の変更は受け付けておりません。一度に2つ以上のテストにお申込みすることもご遠慮ください。
+		<u>多重登録が発覚した場合、お申込みが取り消される場合がございます</u>。
+	</dd>
+	<dd>
+                受付予定は通知なく変更されることがあります。ご了承下さい。
+	</dd>
+	<dd>
+		キャンセル待ちなどは受け付けておりません。
+		また、未公開の試験日程、受付開始時間などについてお問い合わせ頂いても回答できませんので、予めご了解下さい。
+	</dd>
+</dl>
+
+
+</p>
+
+
+    	<h3 class="area_title">北海道地方</h3>      
+	
+			<ul class="list">
+			<li class="pref">
+				北海道<br />
+				<b>8/31</b>
+			</li>
+			<li class="date">
+				日時 ： 2025/08/31(日)　10:00~11:00<br />
+				場所 ： 北海道札幌市中央区<br />
+				このテストには、北海道在住の方がお申込みできます。
+			</li>
+                        			<li class="link">
+									<img src="skin/default/image/exam/entry_quota.jpg" alt="満員" />
+							</li>
+                        		</ul>
+			<ul class="list">
+			<li class="pref">
+				北海道<br />
+				<b>8/31</b>
+			</li>
+			<li class="date">
+				日時 ： 2025/08/31(日)　12:15~13:15<br />
+				場所 ： 北海道札幌市中央区<br />
+				このテストには、北海道在住の方がお申込みできます。
+			</li>
+                        			<li class="link">
+									<img src="skin/default/image/exam/entry_quota.jpg" alt="満員" />
+							</li>
+                        		</ul>
+			<ul class="list">
+			<li class="pref">
+				北海道<br />
+				<b>8/31</b>
+			</li>
+			<li class="date">
+				日時 ： 2025/08/31(日)　14:00~15:00<br />
+				場所 ： 北海道札幌市中央区<br />
+				このテストには、北海道在住の方がお申込みできます。
+			</li>
+                        			<li class="link">
+									<img src="skin/default/image/exam/entry_quota.jpg" alt="満員" />
+							</li>
+                        		</ul>
+	    
+    	<h3 class="area_title">東北地方</h3>     
+	
+			<ul class="list">
+			<li class="pref">
+				青森県<br />
+				<b>7/26</b>
+			</li>
+			<li class="date">
+				日時 ： 2025/07/26(土)　13:30~14:30<br />
+				場所 ： 青森県青森市<br />
+				このテストは、青森県、岩手県、宮城県、秋田県、山形県、福島県在住の方が申し込めます。
+			</li>
+                        			<li class="link">
+									<img src="skin/default/image/exam/entry_quota.jpg" alt="満員" />
+							</li>
+                        		</ul>
+			<ul class="list">
+			<li class="pref">
+				青森県<br />
+				<b>7/26</b>
+			</li>
+			<li class="date">
+				日時 ： 2025/07/26(土)　15:30~16:30<br />
+				場所 ： 青森県青森市<br />
+				このテストは、青森県、岩手県、宮城県、秋田県、山形県、福島県在住の方が申し込めます。
+			</li>
+                        			<li class="link">
+									<img src="skin/default/image/exam/entry_quota.jpg" alt="満員" />
+							</li>
+                        		</ul>
+	    
+    	<h3 class="area_title">関東地方</h3>         
+	
+			<ul class="list">
+			<li class="pref">
+				東京都<br />
+				<b>8/10</b>
+			</li>
+			<li class="date">
+				日時 ： 2025/08/10(日)　11:00~12:00<br />
+				場所 ： 東京都新宿区<br />
+				このテストには、全国の方がお申込みいただけます。
+			</li>
+                        			<li class="link">
+									<img src="skin/default/image/exam/entry_quota.jpg" alt="満員" />
+							</li>
+                        		</ul>
+			<ul class="list">
+			<li class="pref">
+				東京都<br />
+				<b>8/10</b>
+			</li>
+			<li class="date">
+				日時 ： 2025/08/10(日)　14:00~15:00<br />
+				場所 ： 東京都新宿区<br />
+				このテストには、全国の方がお申込みいただけます。
+			</li>
+                        			<li class="link">
+									<img src="skin/default/image/exam/entry_quota.jpg" alt="満員" />
+							</li>
+                        		</ul>
+			<ul class="list">
+			<li class="pref">
+				東京都<br />
+				<b>8/10</b>
+			</li>
+			<li class="date">
+				日時 ： 2025/08/10(日)　16:00~17:00<br />
+				場所 ： 東京都新宿区<br />
+				このテストには、全国の方がお申込みいただけます。
+			</li>
+                        			<li class="link">
+									<img src="skin/default/image/exam/entry_quota.jpg" alt="満員" />
+							</li>
+                        		</ul>
+			<ul class="list">
+			<li class="pref">
+				神奈川県<br />
+				<b>8/11</b>
+			</li>
+			<li class="date">
+				日時 ： 2025/08/11(月)　13:30~14:30<br />
+				場所 ： 神奈川県横浜市神奈川区<br />
+				このテストには、全国の方がお申込みいただけます。
+			</li>
+                        			<li class="link">
+									<img src="skin/default/image/exam/entry_quota.jpg" alt="満員" />
+							</li>
+                        		</ul>
+			<ul class="list">
+			<li class="pref">
+				神奈川県<br />
+				<b>8/11</b>
+			</li>
+			<li class="date">
+				日時 ： 2025/08/11(月)　15:00~16:00<br />
+				場所 ： 神奈川県横浜市神奈川区<br />
+				このテストには、全国の方がお申込みいただけます。
+			</li>
+                        			<li class="link">
+									<img src="skin/default/image/exam/entry_quota.jpg" alt="満員" />
+							</li>
+                        		</ul>
+			<ul class="list">
+			<li class="pref">
+				神奈川県<br />
+				<b>8/11</b>
+			</li>
+			<li class="date">
+				日時 ： 2025/08/11(月)　16:30~17:30<br />
+				場所 ： 神奈川県横浜市神奈川区<br />
+				このテストには、全国の方がお申込みいただけます。
+			</li>
+                        			<li class="link">
+									<img src="skin/default/image/exam/entry_quota.jpg" alt="満員" />
+							</li>
+                        		</ul>
+	    
+    	<h3 class="area_title">中部地方</h3>     
+	
+			<ul class="list">
+			<li class="pref">
+				愛知県<br />
+				<b>7/26</b>
+			</li>
+			<li class="date">
+				日時 ： 2025/07/26(土)　13:30~14:30<br />
+				場所 ： 愛知県名古屋市中村区<br />
+				このテストには、愛知県、岐阜県、三重県、静岡県、長野県、富山県、石川県、福井県在住の方が申し込めます。
+			</li>
+                        			<li class="link">
+									<img src="skin/default/image/exam/entry_quota.jpg" alt="満員" />
+							</li>
+                        		</ul>
+			<ul class="list">
+			<li class="pref">
+				愛知県<br />
+				<b>7/26</b>
+			</li>
+			<li class="date">
+				日時 ： 2025/07/26(土)　15:30~16:30<br />
+				場所 ： 愛知県名古屋市中村区<br />
+				このテストには、全国の方がお申込みいただけます。
+			</li>
+                        			<li class="link">
+									<img src="skin/default/image/exam/entry_quota.jpg" alt="満員" />
+							</li>
+                        		</ul>
+			<ul class="list">
+			<li class="pref">
+				愛知県<br />
+				<b>7/26</b>
+			</li>
+			<li class="date">
+				日時 ： 2025/07/26(土)　17:30~18:30<br />
+				場所 ： 愛知県名古屋市中村区<br />
+				このテストには、愛知県、岐阜県、三重県、静岡県、長野県、富山県、石川県、福井県在住の方が申し込めます。
+			</li>
+                        			<li class="link">
+									<img src="skin/default/image/exam/entry_quota.jpg" alt="満員" />
+							</li>
+                        		</ul>
+	    
+    	<h3 class="area_title">近畿地方</h3>
+	
+			<ul class="list">
+			<li class="pref">
+				大阪府<br />
+				<b>8/09</b>
+			</li>
+			<li class="date">
+				日時 ： 2025/08/09(土)　11:00~12:00<br />
+				場所 ： 大阪府大阪市福島区<br />
+				このテストには、大阪府、京都府、兵庫県、奈良県、和歌山県、滋賀県、三重県在住の方が申し込めます。
+			</li>
+                        			<li class="link">
+									<img src="skin/default/image/exam/entry_quota.jpg" alt="満員" />
+							</li>
+                        		</ul>
+			<ul class="list">
+			<li class="pref">
+				大阪府<br />
+				<b>8/09</b>
+			</li>
+			<li class="date">
+				日時 ： 2025/08/09(土)　13:30~14:30<br />
+				場所 ： 大阪府大阪市福島区<br />
+				このテストには、大阪府、京都府、兵庫県、奈良県、和歌山県、滋賀県、三重県在住の方が申し込めます。
+			</li>
+                        			<li class="link">
+									<img src="skin/default/image/exam/entry_quota.jpg" alt="満員" />
+							</li>
+                        		</ul>
+			<ul class="list">
+			<li class="pref">
+				大阪府<br />
+				<b>8/09</b>
+			</li>
+			<li class="date">
+				日時 ： 2025/08/09(土)　15:30~16:30<br />
+				場所 ： 大阪府大阪市福島区<br />
+				このテストには、大阪府、京都府、兵庫県、奈良県、和歌山県、滋賀県、三重県在住の方が申し込めます。
+			</li>
+                        			<li class="link">
+									<img src="skin/default/image/exam/entry_quota.jpg" alt="満員" />
+							</li>
+                        		</ul>
+	    
+    	<h3 class="area_title">中国地方</h3> 
+	
+			<ul class="list">
+			<li class="pref">
+				鳥取県<br />
+				<b>8/23</b>
+			</li>
+			<li class="date">
+				日時 ： 2025/08/23(土)　14:00~15:00<br />
+				場所 ： 鳥取県米子市<br />
+				このテストには、鳥取県、島根県、岡山県、広島県、山口県の方が申し込めます。<br />
+
+			</li>
+                        			<li class="link">
+									<a href="exam/index/notice/id/587/"><img src="skin/default/image/exam/entry_out.jpg" alt="申し込む" /></a>
+							</li>
+                        		</ul>
+			<ul class="list">
+			<li class="pref">
+				鳥取県<br />
+				<b>8/23</b>
+			</li>
+			<li class="date">
+				日時 ： 2025/08/23(土)　16:00~17:00<br />
+				場所 ： 鳥取県米子市<br />
+				このテストには、鳥取県、島根県、岡山県、広島県、山口県の方が申し込めます。
+			</li>
+                        			<li class="link">
+									<a href="exam/index/notice/id/588/"><img src="skin/default/image/exam/entry_out.jpg" alt="申し込む" /></a>
+							</li>
+                        		</ul>
+	    
+    	<h3 class="area_title">四国地方</h3>    
+	
+			<p>（現在未定です）</p>
+	    
+    	<h3 class="area_title">九州地方</h3>          
+	
+			<p>（現在未定です）</p>
+	    
+    
+            
+
+
+	</div>
+	
+	<div id="sidebar">
+
+	<h3><img src="skin/default/image/common/sidebar/menu.jpg" alt="menu" /></h3>
+	<ul>
+		<li><a href="./">トップページ</a></li>
+	</ul>
+
+	<h4><img src="skin/default/image/common/sidebar/about.jpg" alt="ABOUT mensa" /></h4>
+	<ul>
+		<li><a href="about.html">メンサとは</a></li>
+		<li><a href="whatisiq.html">What is IQ？</a></li>
+		<li><a href="staff.html">役職者紹介</a></li>
+	</ul>
+
+	<h4><img src="skin/default/image/common/sidebar/join.jpg" alt="JOIN US" /></h4>
+	<ul>
+		<li><a href="join.html">入会方法</a></li>
+		<li><a href="exam/">入会テスト日程一覧</a></li>
+		<li><a href="reenroll/">再入会申請</a></li>
+	</ul>
+
+	<h4><img src="skin/default/image/common/sidebar/info.jpg" alt="INFORMATION" /></h4>
+	<ul>
+		<li><a href="event/">行事予定</a></li>
+		<li><a href="coverage.html">メディアの方へ</a></li>
+		<li><a href="privacy.html">プライバシーポリシー</a></li>
+		<li><a href="faq.html">FAQ</a></li>
+		<li><a href="contact/">お問い合わせ</a></li>
+		<li><a href="link.html">リンク</a></li>
+	</ul>
+
+	<h4><img src="skin/default/image/common/sidebar/sight.jpg" alt="SIGHT" /></h4>
+	<ul>
+		<li><a href="sight/">SIGHT in Japan</a></li>
+	</ul>
+
+	<h3 class="sns"><img src="skin/default/image/common/sidebar/sns.jpg" alt="SNS" /></h3>
+	<ul>
+		<li class="twitter"><a href="https://twitter.com/mensajp" target="_blank">JAPAN MENSA twitter</a></li>
+		<li class="facebook"><a href="https://www.facebook.com/japanmensa" target="_blank">JAPAN MENSA facebook</a></li>
+	</ul>
+
+	<h3><img src="skin/default/image/common/sidebar/topics.jpg" alt="TOPICS" /></h3>
+	<ul>
+		<li class="banner"><a href="join.html"><img src="skin/default/image/common/sidebar/banner_join.jpg" alt="入会のご案内" /></a></li>
+	</ul>
+</div>
+
+	
+	<div class="upperlink"><img src="skin/common/image/button_up.jpg" alt="ページトップへ" /></div>
+</div>
+
+<div id="footer">
+
+	<ul>
+		<li><a href="contact/">お問い合わせ</a></li>
+		<li><a href="contact/en/">Contact us</a></li>
+		<li><a href="privacy.html">プライバシー・ポリシー</a></li>
+	</ul>
+	
+	<div class="address">
+		<img src="skin/common/image/footer_name.png" alt="JAPAN MENSA" /><br />
+		〒103-0027 東京都中央区日本橋3-2-14 日本橋KNビル4階 JAPAN MENSA事務局
+	</div>
+	
+	<div class="copyright">
+		Copyright (C) 2007-2023 JAPAN MENSA All Rights Reserved.
+	</div>
+
+</div>
+
+</body>
+</html>
+
