@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 from email.message import EmailMessage
 from pathlib import Path
 
-CACHE_FILE = "../cache.txt"
+CACHE_FILE = "./cache.txt"
 URL = "https://mensa.jp/exam/"
 AREA_START = "近畿地方"
 AREA_END = "中国地方"
