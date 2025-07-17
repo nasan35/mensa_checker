@@ -60,11 +60,15 @@ def main():
 
     if Path(CACHE_FILE).exists():
         old_html = Path(CACHE_FILE).read_text(encoding="utf-8")
-        if extract_target_text(old_html) != extract_target_text(new_html):
-            diff_text = get_plain_diff(old_html, new_html)
-            send_email(diff_text)
-        else:
-            print("変更なし")
+
+        diff_text = get_plain_diff(old_html, new_html)
+        send_email(diff_text)
+    
+        #if extract_target_text(old_html) != extract_target_text(new_html):
+        #    diff_text = get_plain_diff(old_html, new_html)
+        #    send_email(diff_text)
+        #else:
+        #    print("変更なし")
     else:
         print("初回キャッシュ作成")
 
