@@ -29,6 +29,13 @@ def save_section(section):
 
 
 def send_email(diff_text):
+    EMAIL_FROM = os.getenv("EMAIL_FROM")
+    EMAIL_TO = os.getenv("EMAIL_TO")
+    EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+    if not all([EMAIL_FROM, EMAIL_TO, EMAIL_PASSWORD]):
+        print("Missing email configuration.")
+        return
+        
     msg = EmailMessage()
     msg["Subject"] = "MENSA試験ページの更新検知"
     msg["From"] = EMAIL_FROM
