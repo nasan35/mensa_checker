@@ -43,7 +43,8 @@ def send_email(diff_text):
     msg["Subject"] = "【Mensa試験情報】ページに更新がありました"
     msg["From"] = os.environ["EMAIL_FROM"]
     msg["To"] = os.environ["EMAIL_TO"]
-    msg.set_content(f"""[変更が検出されました]
+    msg.set_content(f"""\
+[変更が検出されました]
 
 ページ: {URL}
 
