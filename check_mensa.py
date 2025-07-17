@@ -43,8 +43,7 @@ def send_email(diff_text):
     msg["Subject"] = "【Mensa試験情報】ページに更新がありました"
     msg["From"] = os.environ["EMAIL_FROM"]
     msg["To"] = os.environ["EMAIL_TO"]
-    msg.set_content(f"""\
-[変更が検出されました]
+    msg.set_content(f"""[変更が検出されました]
 
 ページ: {URL}
 
@@ -61,21 +60,18 @@ def main():
 
     if Path(CACHE_FILE).exists():
         old_html = Path(CACHE_FILE).read_text(encoding="utf-8")
+        
         # 強制的にテストメールを送信する
-diff_text = get_plain_diff(old_html, new_html)
-send_email(diff_text)
-
-# 強制的にテストメールを送信する
-diff_text = get_plain_diff(old_html, new_html)
-send_email(diff_text)
-
-# 本来のチェックを無効化（コメントアウト）
-# if extract_target_text(old_html) != extract_target_text(new_html):
-#     diff_text = get_plain_diff(old_html, new_html)
-#     send_email(diff_text)
-# else:
-#     print("変更なし")
-
+        diff_text = get_plain_diff(old_html, new_html)
+        send_email(diff_text)
+        
+        #if extract_target_text(old_html) != extract_target_text(new_html):
+        #    diff_text = get_plain_diff(old_html, new_html)
+        #    send_email(diff_text)
+        #else:
+        #    print("変更なし")
+    else:
+        print("初回キャッシュ作成")
 
     Path(CACHE_FILE).write_text(new_html, encoding="utf-8")
 
