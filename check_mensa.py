@@ -7,11 +7,6 @@ import smtplib
 URL = "https://mensa.jp/exam/"
 CACHE_FILE = "cached_section.txt"
 
-FROM_EMAIL = "your_email@example.com"  # 差出人のメールアドレス
-TO_EMAIL = "your_email@example.com"    # 宛先のメールアドレス（FROMと同じでもOK）
-APP_PASSWORD = "your_app_password"     # Gmailなどで生成したアプリパスワード
-
-
 def extract_target_section(html):
     soup = BeautifulSoup(html, "html.parser")
     full_text = soup.get_text()
@@ -36,8 +31,8 @@ def save_section(section):
 def send_email(diff_text):
     msg = EmailMessage()
     msg["Subject"] = "MENSA試験ページの更新検知"
-    msg["From"] = FROM_EMAIL
-    msg["To"] = TO_EMAIL
+    msg["From"] = EMAIL_FROM
+    msg["To"] = EMAIL_TO
 
     body = f"""https://mensa.jp/exam/
 
@@ -46,7 +41,7 @@ def send_email(diff_text):
     msg.set_content(body)
 
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
-        smtp.login(FROM_EMAIL, APP_PASSWORD)
+        server.login(EMAIL_FROM, EMAIL_PASSWORD)
         smtp.send_message(msg)
 
 
