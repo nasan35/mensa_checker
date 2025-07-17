@@ -38,10 +38,15 @@ def send_email(diff_text):
     msg["Subject"] = "【MENSA】試験情報に更新がありました"
     msg["From"] = email_from
     msg["To"] = email_to
-    msg.set_content(f"""MENSAの試験情報ページに以下の更新がありました：
+
+    body = f"""{URL}
+
+MENSAの試験情報ページに以下の更新がありました：
 
 {diff_text}
-""")
+"""
+
+    msg.set_content(body)
 
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
         smtp.login(email_from, email_password)
