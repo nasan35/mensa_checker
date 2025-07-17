@@ -1,16 +1,15 @@
-import os
-import smtplib
-import difflib
-import time
 import requests
 from bs4 import BeautifulSoup
+import difflib
+import os
+import smtplib
 from email.message import EmailMessage
-from pathlib import Path
+import re
 
-CACHE_FILE = "cache.html"
 URL = "https://mensa.jp/exam/"
-AREA_START = "近畿地方"
-AREA_END = "中国地方"
+SECTION_START = "近畿地方"
+SECTION_END = "中国地方"
+CACHE_FILE = "cached_section.html"
 
 def fetch_page():
     response = requests.get(URL)
@@ -18,62 +17,81 @@ def fetch_page():
     return response.text
 
 def extract_target_text(html):
-    start = html.find(AREA_START)
-    end = html.find(AREA_END)
-    if start == -1 or end == -1 or start >= end:
-        return ""
-    return html[start:end]
+    soup = BeautifulSoup(html, "html.parser")
+    text = soup.get_text()
+    start = text.find(SECTION_START)
+    end = text.find(SECTION_END, start)
+    return text[start:end] if start != -1 and end != -1 else ""
 
-def get_plain_diff(old_html, new_html):
-    old_text = extract_target_text(old_html)
-    new_text = extract_target_text(new_html)
-    old_plain = BeautifulSoup(old_text, "html.parser").get_text()
-    new_plain = BeautifulSoup(new_text, "html.parser").get_text()
+def extract_target_html(html):
+    soup = BeautifulSoup(html, "html.parser")
+    content = soup.get_text()
+    start = content.find(SECTION_START)
+    end = content.find(SECTION_END, start)
+    if start != -1 and end != -1:
+        full_text = soup.get_text()
+        return full_text[start:end]
+    else:
+        return ""
+
+def load_cached_section():
+    if os.path.exists(CACHE_FILE):
+        with open(CACHE_FILE, "r", encoding="utf-8") as f:
+            return f.read()
+    return ""
+
+def save_cached_section(section_text):
+    with open(CACHE_FILE, "w", encoding="utf-8") as f:
+        f.write(section_text)
+
+def get_plain_diff(old, new):
     diff = difflib.unified_diff(
-        old_plain.splitlines(),
-        new_plain.splitlines(),
-        fromfile='before',
-        tofile='after',
-        lineterm=''
+        old.splitlines(),
+        new.splitlines(),
+        lineterm="",
+        n=2
     )
-    return "\n".join(diff)
+    diff_lines = list(diff)
+    cleaned_lines = [
+        re.sub(r"<[^>]+>", "", line) for line in diff_lines if line.startswith("+ ") or line.startswith("- ")
+    ]
+    return "\n".join(cleaned_lines)
 
 def send_email(diff_text):
+    email_from = os.environ["EMAIL_FROM"]
+    email_to = os.environ["EMAIL_TO"]
+    email_password = os.environ["EMAIL_PASSWORD"]
+
     msg = EmailMessage()
-    msg["Subject"] = "【Mensa試験情報】ページに更新がありました"
-    msg["From"] = os.environ["EMAIL_FROM"]
-    msg["To"] = os.environ["EMAIL_TO"]
-    msg.set_content(f"""[変更が検出されました]
+    msg["Subject"] = "【MENSA】受験情報ページに更新があります"
+    msg["From"] = email_from
+    msg["To"] = email_to
+    msg.set_content(f"""以下の内容が変更されました：
 
-ページ: {URL}
-
-変更内容（抜粋）:
 {diff_text}
 """)
 
-    with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
-        smtp.login(os.environ["EMAIL_FROM"], os.environ["EMAIL_PASSWORD"])
-        smtp.send_message(msg)
+    try:
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+            smtp.login(email_from, email_password)
+            smtp.send_message(msg)
+        print("✅ メールを送信しました")
+    except Exception as e:
+        print("❌ メール送信に失敗しました:", e)
 
 def main():
     new_html = fetch_page()
+    new_section = extract_target_html(new_html)
+    old_section = load_cached_section()
 
-    if Path(CACHE_FILE).exists():
-        old_html = Path(CACHE_FILE).read_text(encoding="utf-8")
-        
-        # 強制的にテストメールを送信する
-        diff_text = get_plain_diff(old_html, new_html)
+    if extract_target_text(old_section) != extract_target_text(new_html):
+        diff_text = get_plain_diff(old_section, new_section)
         send_email(diff_text)
-        
-        #if extract_target_text(old_html) != extract_target_text(new_html):
-        #    diff_text = get_plain_diff(old_html, new_html)
-        #    send_email(diff_text)
-        #else:
-        #    print("変更なし")
+        save_cached_section(new_section)
     else:
-        print("初回キャッシュ作成")
-
-    Path(CACHE_FILE).write_text(new_html, encoding="utf-8")
+        print("変更はありません")
 
 if __name__ == "__main__":
     main()
+    # テスト送信用（必要に応じてコメントアウト解除）
+    # send_email("これはテスト送信です。実際の変更はありません。")
