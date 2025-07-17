@@ -17,12 +17,19 @@ def fetch_page():
     response.raise_for_status()
     return response.text
 
+#def extract_target_text(html):
+#    start = html.find(AREA_START)
+#    end = html.find(AREA_END)
+#    if start == -1 or end == -1 or start >= end:
+#        return ""
+#    return html[start:end]
+
 def extract_target_text(html):
-    start = html.find(AREA_START)
-    end = html.find(AREA_END)
-    if start == -1 or end == -1 or start >= end:
-        return ""
-    return html[start:end]
+    soup = BeautifulSoup(html, "html.parser")
+    full_text = soup.get_text()
+    start = full_text.find(AREA_START)
+    end = full_text.find(AREA_END) + len(AREA_END)
+    return full_text[start:end].strip()
 
 def get_plain_diff(old_html, new_html):
     old_text = extract_target_text(old_html)
@@ -63,6 +70,7 @@ def main():
         if extract_target_text(old_html) != extract_target_text(new_html):
             diff_text = get_plain_diff(old_html, new_html)
             send_email(diff_text)
+            print("変更あり")
         else:
             print("変更なし")
     else:
