@@ -1,56 +1,54 @@
-import os
-import requests
 import difflib
-import smtplib
+import requests
 from bs4 import BeautifulSoup
 from email.message import EmailMessage
+import smtplib
 
 URL = "https://mensa.jp/exam/"
-SECTION_START = "近畿地方"
-SECTION_END = "中国地方"
-CACHE_FILE = "latest_section.txt"
+CACHE_FILE = "cached_section.txt"
+
+FROM_EMAIL = "your_email@example.com"  # 差出人のメールアドレス
+TO_EMAIL = "your_email@example.com"    # 宛先のメールアドレス（FROMと同じでもOK）
+APP_PASSWORD = "your_app_password"     # Gmailなどで生成したアプリパスワード
+
 
 def extract_target_section(html):
     soup = BeautifulSoup(html, "html.parser")
-    text = soup.get_text()
-    start_index = text.find(SECTION_START)
-    end_index = text.find(SECTION_END)
-    if start_index == -1 or end_index == -1 or start_index >= end_index:
-        return ""
-    return text[start_index:end_index].strip()
+    full_text = soup.get_text()
+    start = full_text.find("近畿地方")
+    end = full_text.find("中国地方") + len("中国地方")
+    return full_text[start:end].strip()
+
 
 def load_cached_section():
-    if not os.path.exists(CACHE_FILE):
+    try:
+        with open(CACHE_FILE, "r", encoding="utf-8") as f:
+            return f.read()
+    except FileNotFoundError:
         return ""
-    with open(CACHE_FILE, "r", encoding="utf-8") as f:
-        return f.read()
 
-def save_section(text):
+
+def save_section(section):
     with open(CACHE_FILE, "w", encoding="utf-8") as f:
-        f.write(text)
+        f.write(section)
+
 
 def send_email(diff_text):
-    email_from = os.environ["EMAIL_FROM"]
-    email_to = os.environ["EMAIL_TO"]
-    email_password = os.environ["EMAIL_PASSWORD"]
-
     msg = EmailMessage()
-    msg["Subject"] = "【MENSA】試験情報に更新がありました"
-    msg["From"] = email_from
-    msg["To"] = email_to
+    msg["Subject"] = "MENSA試験ページの更新検知"
+    msg["From"] = FROM_EMAIL
+    msg["To"] = TO_EMAIL
 
-    body = f"""{URL}
-
-MENSAの試験情報ページに以下の更新がありました：
+    body = f"""https://mensa.jp/exam/
 
 {diff_text}
 """
-
     msg.set_content(body)
 
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
-        smtp.login(email_from, email_password)
+        smtp.login(FROM_EMAIL, APP_PASSWORD)
         smtp.send_message(msg)
+
 
 def main():
     response = requests.get(URL)
@@ -63,10 +61,20 @@ def main():
             new_section.splitlines(),
             lineterm=""
         )
-        diff_text = "\n".join(diff)
-        if diff_text.strip():  # 差分が存在する場合
+
+        cleaned_diff_lines = []
+        for line in diff:
+            if line.startswith('+++') or line.startswith('---') or line.startswith('@@'):
+                continue
+            elif line.startswith('+') or line.startswith('-'):
+                cleaned_diff_lines.append(line[1:].strip())
+
+        diff_text = "\n".join(cleaned_diff_lines)
+
+        if diff_text.strip():
             send_email(diff_text)
             save_section(new_section)
+
 
 if __name__ == "__main__":
     main()
