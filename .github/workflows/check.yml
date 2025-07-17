@@ -2,7 +2,7 @@ name: Mensa Page Checker
 
 on:
   schedule:
-    - cron: "*/10 * * * *"  # 10分ごと
+    - cron: "*/10 * * * *"
   workflow_dispatch:
 
 jobs:
