@@ -27,3 +27,10 @@ jobs:
         EMAIL_TO: ${{ secrets.EMAIL_TO }}
         EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
       run: python check_mensa.py
+      
+    - name: Commit and push cache
+      run: |
+        git config --global user.name 'nasan35'
+        git add cache.txt
+        git commit -m "Add cache"
+        git push
