@@ -131,7 +131,7 @@
 </p>
 
 
-    	<h3 class="area_title">北海道地方</h3>    
+    	<h3 class="area_title">北海道地方</h3>     
 	
 			<ul class="list">
 			<li class="pref">
@@ -176,7 +176,7 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">東北地方</h3>          
+    	<h3 class="area_title">東北地方</h3>      
 	
 			<ul class="list">
 			<li class="pref">
@@ -207,7 +207,7 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">関東地方</h3>    
+    	<h3 class="area_title">関東地方</h3>      
 	
 			<ul class="list">
 			<li class="pref">
@@ -294,7 +294,7 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">中部地方</h3> 
+    	<h3 class="area_title">中部地方</h3>
 	
 			<ul class="list">
 			<li class="pref">
@@ -339,7 +339,7 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">近畿地方</h3>       
+    	<h3 class="area_title">近畿地方</h3>
 	
 			<ul class="list">
 			<li class="pref">
@@ -347,7 +347,7 @@
 				<b>8/09</b>
 			</li>
 			<li class="date">
-				日時 ： 2025/08/03(土)　11:00~12:00<br />
+				日時 ： 2025/08/09(土)　11:00~12:00<br />
 				場所 ： 大阪府大阪市福島区<br />
 				このテストには、大阪府、京都府、兵庫県、奈良県、和歌山県、滋賀県、三重県在住の方が申し込めます。
 			</li>
@@ -384,7 +384,7 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">中国地方</h3>
+    	<h3 class="area_title">中国地方</h3>      
 	
 			<ul class="list">
 			<li class="pref">
@@ -416,16 +416,16 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">四国地方</h3>    
+    	<h3 class="area_title">四国地方</h3> 
 	
 			<p>（現在未定です）</p>
 	    
-    	<h3 class="area_title">九州地方</h3>    
+    	<h3 class="area_title">九州地方</h3>          
 	
 			<p>（現在未定です）</p>
 	    
     
-              
+                                                                                               
 
 
 	</div>
