@@ -131,7 +131,7 @@
 </p>
 
 
-    	<h3 class="area_title">北海道地方</h3>     
+    	<h3 class="area_title">北海道地方</h3>  
 	
 			<ul class="list">
 			<li class="pref">
@@ -176,7 +176,7 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">東北地方</h3>    
+    	<h3 class="area_title">東北地方</h3>   
 	
 			<ul class="list">
 			<li class="pref">
@@ -221,7 +221,7 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">関東地方</h3>  
+    	<h3 class="area_title">関東地方</h3>     
 	
 			<ul class="list">
 			<li class="pref">
@@ -350,7 +350,7 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">中部地方</h3>          
+    	<h3 class="area_title">中部地方</h3>     
 	
 			<ul class="list">
 			<li class="pref">
@@ -423,7 +423,7 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">近畿地方</h3>     
+    	<h3 class="area_title">近畿地方</h3>   
 	
 			<ul class="list">
 			<li class="pref">
@@ -510,7 +510,7 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">中国地方</h3>         
+    	<h3 class="area_title">中国地方</h3>    
 	
 			<ul class="list">
 			<li class="pref">
@@ -555,11 +555,11 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">四国地方</h3>        
+    	<h3 class="area_title">四国地方</h3>         
 	
 			<p>（現在未定です）</p>
 	    
-    	<h3 class="area_title">九州地方</h3>   
+    	<h3 class="area_title">九州地方</h3>         
 	
 			<ul class="list">
 			<li class="pref">
@@ -605,7 +605,7 @@
                         		</ul>
 	    
     
-                                                                                         
+                                                                                      
 
 
 	</div>
