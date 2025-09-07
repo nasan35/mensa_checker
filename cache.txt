@@ -131,11 +131,11 @@
 </p>
 
 
-    	<h3 class="area_title">北海道地方</h3>    
+    	<h3 class="area_title">北海道地方</h3>        
 	
 			<p>（現在未定です）</p>
 	    
-    	<h3 class="area_title">東北地方</h3>          
+    	<h3 class="area_title">東北地方</h3>       
 	
 			<ul class="list">
 			<li class="pref">
@@ -180,7 +180,7 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">関東地方</h3>        
+    	<h3 class="area_title">関東地方</h3>  
 	
 			<ul class="list">
 			<li class="pref">
@@ -309,36 +309,8 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">中部地方</h3>     
+    	<h3 class="area_title">中部地方</h3>  
 	
-			<ul class="list">
-			<li class="pref">
-				新潟県<br />
-				<b>9/07</b>
-			</li>
-			<li class="date">
-				日時 ： 2025/09/07(日)　13:30~14:30<br />
-				場所 ： 新潟県新潟市<br />
-				このテストには、新潟県、山形県、福島県、群馬県、長野県、富山県の方のみ申し込めます。
-			</li>
-                        			<li class="link">
-									<img src="skin/default/image/exam/entry_expire.jpg" alt="締切" />
-							</li>
-                        		</ul>
-			<ul class="list">
-			<li class="pref">
-				新潟県<br />
-				<b>9/07</b>
-			</li>
-			<li class="date">
-				日時 ： 2025/09/07(日)　15:30~16:30<br />
-				場所 ： 新潟県新潟市<br />
-				このテストには、新潟県、山形県、福島県、群馬県、長野県、富山県の方のみ申し込めます。
-			</li>
-                        			<li class="link">
-									<img src="skin/default/image/exam/entry_expire.jpg" alt="締切" />
-							</li>
-                        		</ul>
 			<ul class="list">
 			<li class="pref">
 				愛知県<br />
@@ -382,7 +354,7 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">近畿地方</h3>  
+    	<h3 class="area_title">近畿地方</h3>
 	
 			<ul class="list">
 			<li class="pref">
@@ -469,7 +441,7 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">中国地方</h3>       
+    	<h3 class="area_title">中国地方</h3>  
 	
 			<ul class="list">
 			<li class="pref">
@@ -514,11 +486,11 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">四国地方</h3>    
+    	<h3 class="area_title">四国地方</h3>   
 	
 			<p>（現在未定です）</p>
 	    
-    	<h3 class="area_title">九州地方</h3> 
+    	<h3 class="area_title">九州地方</h3>       
 	
 			<ul class="list">
 			<li class="pref">
@@ -564,7 +536,7 @@
                         		</ul>
 	    
     
-                          
+                                                                     
 
 
 	</div>
