@@ -131,11 +131,11 @@
 </p>
 
 
-    	<h3 class="area_title">北海道地方</h3>        
+    	<h3 class="area_title">北海道地方</h3>    
 	
 			<p>（現在未定です）</p>
 	    
-    	<h3 class="area_title">東北地方</h3>
+    	<h3 class="area_title">東北地方</h3>  
 	
 			<ul class="list">
 			<li class="pref">
@@ -182,48 +182,6 @@
 	    
     	<h3 class="area_title">関東地方</h3>    
 	
-			<ul class="list">
-			<li class="pref">
-				神奈川県<br />
-				<b>9/14</b>
-			</li>
-			<li class="date">
-				日時 ： 2025/09/14(日)　11:00~12:00<br />
-				場所 ： 神奈川県藤沢市<br />
-				このテストには、全国の方がお申込みいただけます。
-			</li>
-                        			<li class="link">
-									<img src="skin/default/image/exam/entry_expire.jpg" alt="締切" />
-							</li>
-                        		</ul>
-			<ul class="list">
-			<li class="pref">
-				神奈川県<br />
-				<b>9/14</b>
-			</li>
-			<li class="date">
-				日時 ： 2025/09/14(日)　13:30~14:30<br />
-				場所 ： 神奈川県藤沢市<br />
-				このテストには、全国の方がお申込みいただけます。
-			</li>
-                        			<li class="link">
-									<img src="skin/default/image/exam/entry_quota.jpg" alt="満員" />
-							</li>
-                        		</ul>
-			<ul class="list">
-			<li class="pref">
-				神奈川県<br />
-				<b>9/14</b>
-			</li>
-			<li class="date">
-				日時 ： 2025/09/14(日)　15:30~16:30<br />
-				場所 ： 神奈川県藤沢市<br />
-				このテストには、全国の方がお申込みいただけます。
-			</li>
-                        			<li class="link">
-									<img src="skin/default/image/exam/entry_expire.jpg" alt="締切" />
-							</li>
-                        		</ul>
 			<ul class="list">
 			<li class="pref">
 				東京都<br />
@@ -309,7 +267,7 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">中部地方</h3>
+    	<h3 class="area_title">中部地方</h3>      
 	
 			<ul class="list">
 			<li class="pref">
@@ -354,7 +312,7 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">近畿地方</h3>         
+    	<h3 class="area_title">近畿地方</h3>       
 	
 			<ul class="list">
 			<li class="pref">
@@ -441,7 +399,7 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">中国地方</h3>          
+    	<h3 class="area_title">中国地方</h3> 
 	
 			<ul class="list">
 			<li class="pref">
@@ -486,11 +444,11 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">四国地方</h3>   
+    	<h3 class="area_title">四国地方</h3>
 	
 			<p>（現在未定です）</p>
 	    
-    	<h3 class="area_title">九州地方</h3>          
+    	<h3 class="area_title">九州地方</h3>         
 	
 			<ul class="list">
 			<li class="pref">
@@ -536,7 +494,7 @@
                         		</ul>
 	    
     
-                                                     
+                                                              
 
 
 	</div>
