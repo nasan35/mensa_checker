@@ -131,15 +131,56 @@
 </p>
 
 
-    	<h3 class="area_title">北海道地方</h3>          
+    	<h3 class="area_title">北海道地方</h3>    
+	
+			<ul class="list">
+			<li class="pref">
+				北海道<br />
+				<b>1/10</b>
+			</li>
+			<li class="date">
+				日時 ： 2026/01/10(土)　13:30~14:30<br />
+				場所 ： 北海道札幌市北区<br />
+				このテストには、北海道在住の方がお申込みできます。
+			</li>
+                        			<li class="link">
+									<a href="exam/index/notice/id/659/"><img src="skin/default/image/exam/entry_out.jpg" alt="申し込む" /></a>
+							</li>
+                        		</ul>
+			<ul class="list">
+			<li class="pref">
+				北海道<br />
+				<b>1/10</b>
+			</li>
+			<li class="date">
+				日時 ： 2026/01/10(土)　15:00~16:00<br />
+				場所 ： 北海道札幌市北区<br />
+				このテストには、北海道在住の方がお申込みできます。
+			</li>
+                        			<li class="link">
+									<a href="exam/index/notice/id/660/"><img src="skin/default/image/exam/entry_out.jpg" alt="申し込む" /></a>
+							</li>
+                        		</ul>
+			<ul class="list">
+			<li class="pref">
+				北海道<br />
+				<b>1/10</b>
+			</li>
+			<li class="date">
+				日時 ： 2026/01/10(土)　16:30~17:30<br />
+				場所 ： 北海道札幌市北区<br />
+				このテストには、北海道在住の方がお申込みできます。
+			</li>
+                        			<li class="link">
+									<a href="exam/index/notice/id/661/"><img src="skin/default/image/exam/entry_out.jpg" alt="申し込む" /></a>
+							</li>
+                        		</ul>
+	    
+    	<h3 class="area_title">東北地方</h3>       
 	
 			<p>（現在未定です）</p>
 	    
-    	<h3 class="area_title">東北地方</h3>        
-	
-			<p>（現在未定です）</p>
-	    
-    	<h3 class="area_title">関東地方</h3>         
+    	<h3 class="area_title">関東地方</h3>  
 	
 			<ul class="list">
 			<li class="pref">
@@ -226,7 +267,7 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">中部地方</h3>      
+    	<h3 class="area_title">中部地方</h3>    
 	
 			<ul class="list">
 			<li class="pref">
@@ -270,8 +311,50 @@
 									<img src="skin/default/image/exam/entry_quota.jpg" alt="満員" />
 							</li>
                         		</ul>
+			<ul class="list">
+			<li class="pref">
+				愛知県<br />
+				<b>1/10</b>
+			</li>
+			<li class="date">
+				日時 ： 2026/01/10(土)　12:30~13:30<br />
+				場所 ： 愛知県名古屋市中区<br />
+				このテストには、愛知県、岐阜県、三重県、静岡県、長野県、富山県、石川県、福井県在住の方が申し込めます。
+			</li>
+                        			<li class="link">
+									<a href="exam/index/notice/id/653/"><img src="skin/default/image/exam/entry_out.jpg" alt="申し込む" /></a>
+							</li>
+                        		</ul>
+			<ul class="list">
+			<li class="pref">
+				愛知県<br />
+				<b>1/10</b>
+			</li>
+			<li class="date">
+				日時 ： 2026/01/10(土)　14:00~15:00<br />
+				場所 ： 愛知県名古屋市中区<br />
+				このテストには、愛知県、岐阜県、三重県、静岡県、長野県、富山県、石川県、福井県在住の方が申し込めます。
+			</li>
+                        			<li class="link">
+									<a href="exam/index/notice/id/654/"><img src="skin/default/image/exam/entry_out.jpg" alt="申し込む" /></a>
+							</li>
+                        		</ul>
+			<ul class="list">
+			<li class="pref">
+				愛知県<br />
+				<b>1/10</b>
+			</li>
+			<li class="date">
+				日時 ： 2026/01/10(土)　15:30~16:30<br />
+				場所 ： 愛知県名古屋市中区<br />
+				このテストには、愛知県、岐阜県、三重県、静岡県、長野県、富山県、石川県、福井県在住の方が申し込めます。
+			</li>
+                        			<li class="link">
+									<a href="exam/index/notice/id/655/"><img src="skin/default/image/exam/entry_out.jpg" alt="申し込む" /></a>
+							</li>
+                        		</ul>
 	    
-    	<h3 class="area_title">近畿地方</h3>       
+    	<h3 class="area_title">近畿地方</h3>
 	
 			<ul class="list">
 			<li class="pref">
@@ -358,7 +441,7 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">中国地方</h3>         
+    	<h3 class="area_title">中国地方</h3>       
 	
 			<ul class="list">
 			<li class="pref">
@@ -389,11 +472,11 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">四国地方</h3>  
+    	<h3 class="area_title">四国地方</h3>    
 	
 			<p>（現在未定です）</p>
 	    
-    	<h3 class="area_title">九州地方</h3>       
+    	<h3 class="area_title">九州地方</h3>
 	
 			<ul class="list">
 			<li class="pref">
@@ -437,9 +520,51 @@
 									<img src="skin/default/image/exam/entry_quota.jpg" alt="満員" />
 							</li>
                         		</ul>
+			<ul class="list">
+			<li class="pref">
+				福岡県<br />
+				<b>1/10</b>
+			</li>
+			<li class="date">
+				日時 ： 2026/01/10(土)　13:00~14:00<br />
+				場所 ： 福岡県福岡市博多区<br />
+				このテストには、福岡県、佐賀県、長崎県、熊本県、大分県、宮崎県、鹿児島県、沖縄県在住の方が申し込めます。
+			</li>
+                        			<li class="link">
+									<a href="exam/index/notice/id/656/"><img src="skin/default/image/exam/entry_out.jpg" alt="申し込む" /></a>
+							</li>
+                        		</ul>
+			<ul class="list">
+			<li class="pref">
+				福岡県<br />
+				<b>1/10</b>
+			</li>
+			<li class="date">
+				日時 ： 2026/01/10(土)　15:00~16:00<br />
+				場所 ： 福岡県福岡市博多区<br />
+				このテストには、福岡県、佐賀県、長崎県、熊本県、大分県、宮崎県、鹿児島県、沖縄県在住の方が申し込めます。
+			</li>
+                        			<li class="link">
+									<a href="exam/index/notice/id/657/"><img src="skin/default/image/exam/entry_out.jpg" alt="申し込む" /></a>
+							</li>
+                        		</ul>
+			<ul class="list">
+			<li class="pref">
+				福岡県<br />
+				<b>1/10</b>
+			</li>
+			<li class="date">
+				日時 ： 2026/01/10(土)　17:00~18:00<br />
+				場所 ： 福岡県福岡市博多区<br />
+				このテストには、福岡県、佐賀県、長崎県、熊本県、大分県、宮崎県、鹿児島県、沖縄県在住の方が申し込めます。
+			</li>
+                        			<li class="link">
+									<a href="exam/index/notice/id/658/"><img src="skin/default/image/exam/entry_out.jpg" alt="申し込む" /></a>
+							</li>
+                        		</ul>
 	    
     
-                                            
+                                                                                               
 
 
 	</div>
