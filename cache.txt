@@ -176,11 +176,11 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">東北地方</h3>          
+    	<h3 class="area_title">東北地方</h3>        
 	
 			<p>（現在未定です）</p>
 	    
-    	<h3 class="area_title">関東地方</h3>    
+    	<h3 class="area_title">関東地方</h3>      
 	
 			<ul class="list">
 			<li class="pref">
@@ -309,7 +309,7 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">中部地方</h3>     
+    	<h3 class="area_title">中部地方</h3>        
 	
 			<ul class="list">
 			<li class="pref">
@@ -396,7 +396,7 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">近畿地方</h3>
+    	<h3 class="area_title">近畿地方</h3>       
 	
 			<ul class="list">
 			<li class="pref">
@@ -510,15 +510,15 @@
 				このテストには、広島県、岡山県、山口県、島根県、鳥取県、香川県、愛媛県、高知県、徳島県在住の方が申し込めます。
 			</li>
                         			<li class="link">
-									<a href="exam/index/notice/id/646/"><img src="skin/default/image/exam/entry_out.jpg" alt="申し込む" /></a>
+									<img src="skin/default/image/exam/entry_expire.jpg" alt="締切" />
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">四国地方</h3>        
+    	<h3 class="area_title">四国地方</h3>
 	
 			<p>（現在未定です）</p>
 	    
-    	<h3 class="area_title">九州地方</h3>        
+    	<h3 class="area_title">九州地方</h3>   
 	
 			<ul class="list">
 			<li class="pref">
@@ -564,7 +564,7 @@
                         		</ul>
 	    
     
-                                                             
+                                                    
 
 
 	</div>
