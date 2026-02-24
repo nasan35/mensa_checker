@@ -131,15 +131,15 @@
 </p>
 
 
-    	<h3 class="area_title">北海道地方</h3>  
+    	<h3 class="area_title">北海道地方</h3>   
 	
 			<p>（現在未定です）</p>
 	    
-    	<h3 class="area_title">東北地方</h3>
+    	<h3 class="area_title">東北地方</h3>        
 	
 			<p>（現在未定です）</p>
 	    
-    	<h3 class="area_title">関東地方</h3>   
+    	<h3 class="area_title">関東地方</h3>     
 	
 			<ul class="list">
 			<li class="pref">
@@ -181,6 +181,48 @@
 			</li>
                         			<li class="link">
 									<img src="skin/default/image/exam/entry_quota.jpg" alt="満員" />
+							</li>
+                        		</ul>
+			<ul class="list">
+			<li class="pref">
+				東京都<br />
+				<b>4/04</b>
+			</li>
+			<li class="date">
+				日時 ： 2026/04/04(土)　13:00～14:00<br />
+				場所 ： 東京都新宿区<br />
+				このテストには、全国の方がお申込みいただけます。
+			</li>
+                        			<li class="link">
+									<a href="exam/index/notice/id/698/"><img src="skin/default/image/exam/entry_out.jpg" alt="申し込む" /></a>
+							</li>
+                        		</ul>
+			<ul class="list">
+			<li class="pref">
+				東京都<br />
+				<b>4/04</b>
+			</li>
+			<li class="date">
+				日時 ： 2026/04/04(土)　14:30～15:30<br />
+				場所 ： 東京都新宿区<br />
+				このテストには、全国の方がお申込みいただけます。
+			</li>
+                        			<li class="link">
+									<a href="exam/index/notice/id/699/"><img src="skin/default/image/exam/entry_out.jpg" alt="申し込む" /></a>
+							</li>
+                        		</ul>
+			<ul class="list">
+			<li class="pref">
+				東京都<br />
+				<b>4/04</b>
+			</li>
+			<li class="date">
+				日時 ： 2026/04/04(土)　16:00～17:00<br />
+				場所 ： 東京都新宿区<br />
+				このテストには、全国の方がお申込みいただけます。
+			</li>
+                        			<li class="link">
+									<a href="exam/index/notice/id/700/"><img src="skin/default/image/exam/entry_out.jpg" alt="申し込む" /></a>
 							</li>
                         		</ul>
 	    
@@ -229,7 +271,7 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">近畿地方</h3>     
+    	<h3 class="area_title">近畿地方</h3>          
 	
 			<ul class="list">
 			<li class="pref">
@@ -274,11 +316,11 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">中国地方</h3>       
+    	<h3 class="area_title">中国地方</h3>    
 	
 			<p>（現在未定です）</p>
 	    
-    	<h3 class="area_title">四国地方</h3>    
+    	<h3 class="area_title">四国地方</h3> 
 	
 			<ul class="list">
 			<li class="pref">
@@ -309,7 +351,7 @@
 							</li>
                         		</ul>
 	    
-    	<h3 class="area_title">九州地方</h3>    
+    	<h3 class="area_title">九州地方</h3>         
 	
 			<ul class="list">
 			<li class="pref">
@@ -355,7 +397,7 @@
                         		</ul>
 	    
     
-                 
+                                                                                    
 
 
 	</div>
